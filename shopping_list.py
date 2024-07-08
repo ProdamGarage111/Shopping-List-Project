@@ -18,8 +18,11 @@ def main():
                 decorators.print_succesfully_added(product_to_be_added)
             elif command == 3:
                 product_to_be_removed = input("What would you like to remove? ")
-                shopping_list.remove(product_to_be_removed)
-                decorators.print_succesfully_removed(product_to_be_removed)
+                if product_to_be_removed in shopping_list:
+                    shopping_list.remove(product_to_be_removed)
+                    decorators.print_succesfully_removed(product_to_be_removed)
+                else:
+                    decorators.print_item_is_not_in_the_list
             elif command == 0:
                 decorators.print_exiting_the_program()
                 working_with_file.write_to_the_shopping_list_file(shopping_list)         

@@ -24,3 +24,6 @@ def print_exiting_the_program():
 
 def print_command_not_recognized():
     print("Command not recognized!")
+
+def print_item_is_not_in_the_list():
+    print("Item is not in the list")

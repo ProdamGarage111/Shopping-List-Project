@@ -8,4 +8,4 @@ def write_to_the_shopping_list_file(shopping_list):
     file = open("shopping_list.txt","w")
     for item in shopping_list:
         file.write(item + "\n")
-        file.close()
+    file.close()
